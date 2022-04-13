@@ -14,7 +14,7 @@ public class Employee {
 		
 		name = nameEmp;
 		hours = hoursEmp;
-		setTotalPay(hours);
+		setTotalPay();
 	}
 
 	public String getName() {
@@ -37,7 +37,7 @@ public class Employee {
 		return totalPay;
 	}
 
-	public void setTotalPay(int hours) {
+	public void setTotalPay() {
 		double total;
 		int overtimeHours;
 		

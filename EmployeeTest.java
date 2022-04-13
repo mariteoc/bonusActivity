@@ -9,7 +9,8 @@ class EmployeeTest {
 	void testSetTotalPaySmall40() {
 		Employee emp = new Employee();
 		int hour = 30;
-		emp.setTotalPay(hour);
+		emp.setHours(hour);
+		emp.setTotalPay();
 		
 		assertEquals(450.0,emp.getTotalPay(),0.02);
 	}
@@ -18,7 +19,8 @@ class EmployeeTest {
 	void testSetTotalBig40() {
 		Employee emp = new Employee();
 		int hour = 50;
-		emp.setTotalPay(hour);
+		emp.setHours(hour);
+		emp.setTotalPay();
 		
 		assertEquals(765.0,emp.getTotalPay(),0.02);
 	}
